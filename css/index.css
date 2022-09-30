@@ -1,0 +1,503 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+body{
+    background-color:#ebffff;
+}
+html{
+    scroll-behavior: smooth;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear:both;
+}
+
+header{
+    background: #F8F8F8;
+    position: sticky;
+    top:0;
+    border-bottom: 1px solid rgb(53, 51, 51);
+    z-index: 1;
+}
+/* Logo Part */
+.logo-div{
+    /* border: 5px solid red; */
+    display: block;    /* display: inline-block; */ 
+    float:left;
+}
+.logo-div img {
+    /* border: 2px solid green; */
+    width: 140px;
+    height: 100%;
+}
+
+/* Navigation Bar part */
+.nav-menu{
+    /* border:5px solid yellow; */
+    width:75%;
+    margin-top: 18px;
+    /* background-color: teal; */
+    float:left;
+}
+.nav-menu ul{
+    box-sizing: border-box;
+    text-align: center;
+}
+.nav-menu ul li{
+    display: inline-block;
+    /* border-right:2px solid tomato ; */
+    margin-right: -5px;
+}
+.nav-menu ul li a{
+    text-decoration: none;
+    color: rgb(240, 116, 240);
+    display: inline-block;
+    padding:12px 25px;
+}
+.nav-menu ul li a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color:rgb(62, 187, 236);
+    background-color: rgb(223, 225, 241);
+    transition: 0.5s;
+}
+.nav-menu ul li a:active{
+    cursor: pointer;
+    text-decoration: underline;
+    color:rgb(173, 19, 166);
+    background-color: rgb(223, 241, 241);
+    transition: 0.5s;
+}
+.nav-menu ul li a:focus{
+    background-color: rgb(232, 236, 173);
+}
+.Home-active{
+    background-color: rgb(232, 236, 173);
+}
+.icon{
+    display: block;
+}
+/* Search-Icon part */
+.Search-icon{
+    /* border: 5px solid black; */
+    display: block;         /* display: inline-block; */
+    float:left;
+    margin-top: 18px;
+    /* box-shadow: 1px 3px 5px -1px; */
+}
+.fa-searchengin {
+    padding: 5px 8px;
+    color: rgb(14 11 11);
+    background-color: rgb(26 128 172);
+    border-radius: 10px 0px 0px 10px;
+    height: 20px;
+    padding-top: 7px;
+    margin: 2px;
+}
+.fa-searchengin:hover{
+    cursor: pointer;
+}
+.Search-icon:hover input{
+    background-color: rgba(211, 208, 201, 0.849);
+    border-radius: 0;
+    transition: 0.5s;
+}
+.Search-icon input{
+    padding: 6px 32px;
+    margin-left: -5px;
+    border-left: none;
+    border-radius: 0px 10px 10px 0px;
+    color: rgb(2, 1, 0);
+}
+
+/* MEDIA PART */
+.media-dropdown-container{
+    position: relative;
+}
+
+.media-dropdown-content{
+    position:absolute;
+    display: none;
+    box-shadow: 7px 8px 13px 3px rgba(23, 23, 26, 0.5);
+    text-align: center;
+    top:60px;
+}
+.media-dropdown-content ul li{
+    width: 200px;
+    display: block;
+    color:rgb(62, 187, 236);
+    background-color:#F8F8F8;
+    border-right: 0;
+    border: 1px solid rgb(77, 73, 73);
+}
+.media-dropdown-content ul li a{
+    display: block;
+    color:rgb(238, 79, 87);
+}
+.media-dropdown-container:hover .media-dropdown-content{
+    display: block;
+    transition: 0.5s;
+    background-color: #F8F8F8;
+}
+.media-dropdown-content ul li a:hover{
+    color:rgb(62, 187, 236);
+    background-color: rgb(223, 225, 241);
+    text-decoration: none;
+}
+
+/* ABOUT US PART */
+/* SERVICES PART */
+/* PAYMENT PART */
+
+/* Banner-section */
+.banner-section{
+    border: 1px solid rgb(53, 51, 51);
+    height: 500px;
+    background:url(https://image.freepik.com/free-vector/global-network-connection-world-map-point_41981-1354.jpg) no-repeat  top center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: -1;
+}
+.text{
+    /* border: 2px solid green; */
+    height: 100%;
+    width: 30%;
+    text-align: left;
+    margin-left: 100px;
+    /* z-index: 1; */
+}
+.text H2{
+    margin-top: 160px;
+    margin-left: 40px;
+    color: rgb(14, 11, 11);
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 40px;
+    /* border:5px solid white; */
+}
+.text p{
+    color: orangered;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-left: 40px;
+    line-height: 30px;
+    word-spacing: 5px;
+    font-size: 22px;
+    /* border:5px solid white; */
+}
+
+.shadow-effect{
+    height: 100%;
+    width: 100%;
+    /* border: 5px solid slateblue; */
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color:rgba(87, 231, 241, 0.5);
+    z-index: -1;
+}
+
+.welcome-section{
+    width: 100%;
+    height: 200px;
+    border: 1px solid black;
+    background-color: rgb(0 0 0 / 99%);
+}
+.another-section{
+    width: 80%;
+    margin:0 auto;
+    margin-top: 48px;
+    margin-left: 135px;
+    /* border: 2px solid white; */
+    position: relative;
+}
+.btn{
+    position:absolute;
+    right:100px;
+    top:0;
+    width: 110px;
+    height: 43px;
+    border-radius: 5px;
+    background-color: rgb(26 128 172);
+    color:beige;
+    font-weight: bold;
+}
+.btn:hover{
+    background-color: rgb(7 90 156);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+.package-section{
+    /* border:2px solid red; */
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    height: 450px;
+}
+.package{
+    width: 69%;
+    /* border: 2px solid red; */
+    text-align: center;
+    float: left;
+   
+}
+.package h3{
+    color: rgba(16, 120, 238, 0.911);
+    font-weight: bold;
+    font-size: 25px;
+    font-family:sans-serif;
+    
+}
+.package h3::after{
+    content: "";
+    display: block;
+    width: 60%;
+    height: 2px;
+    background-color: rgb(151, 146, 145);
+    margin: 0 auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.package p{
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 118px;
+}
+.card-box{
+    /* border: 2px solid blue; */
+    text-align: center;
+    margin-left: 116px;
+}
+.card{
+    /* border:1px solid chartreuse; */
+    width: 20%;
+    height: 56px;
+    float: left;
+    text-align: center;
+    margin: 5px;
+    padding:20px 10px 35px 10px;
+    line-height: 36px;
+    background-color: teal;
+    color:rgb(243, 233, 233);
+    font-size: 20px;
+    
+}
+
+.package-img{
+    width: 30%;
+    /* border: 1px solid rgb(0, 119, 255); */
+    float: right;
+    text-align: left;
+}
+button{
+    background-color: rgb(26 128 172);
+    color:rgb(221, 221, 213);
+    fONT-SIZE: 21px;
+    width: 360px;
+    height: 38px;
+    border-radius: 6px;
+    margin-top: 16px;
+}
+
+button:hover{
+    background-color: rgb(7 90 156);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+/* Customer Section */
+.customers{
+    background:linear-gradient(rgba(0, 247, 255, 0),rgba(40, 115, 212, 1));
+    text-align: center;
+    height: 500px;
+    border: 1px solid white;
+}
+.customers h3{
+    color: rgb(34, 13, 12);
+    font-weight: bold;
+    font-size: 30px;
+    font-family:sans-serif; 
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 4%;
+}
+.customers h3::after{
+    content: "";
+    display: block;
+    width: 90%;
+    height: 2px;
+    background-color: rgb(151, 146, 145);
+    /* margin-left: 10%; */
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.customers .image{
+    /* border:2px solid red; */
+    width:18%;
+    display: inline-block;
+    margin:41px -15px 0px 0px;
+}
+.customers .image img{
+    width:250px;
+    height: 150px;
+}
+
+/* FAQ section */
+.faq{
+    border: 1px solid rgb(27, 27, 29);
+    width: 100%;
+    height: 500px;
+    background: url(https://cdn.searchenginejournal.com/wp-content/uploads/2018/09/25-of-the-Best-Examples-of-Effective-FAQ-Pages-1520x800.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 0.9;
+
+}
+.faq ul{
+    width:90%;
+    margin:0 auto;
+    margin-top:126px;
+    margin-left: 135px;
+}
+.faq ul li{
+    color: cornsilk;
+    list-style-image: url(../resources/images/tick.png);
+
+    /* list-style-type:circle; */
+    font-size: 20px;
+    line-height: 30px;
+}
+
+/* Quality Section */
+.flex-container{
+    background-color: rgba(0, 191, 255, 0.034);
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    border-bottom: 0.5px solid gray;
+
+}
+.flex-items{
+    /* border: 2px solid black; */
+    width: 35%;
+    height: 25%;
+    padding:10px 0px;
+}
+.flex-items h3{
+   color: #f509cde0;
+   font-size: 23px;
+   text-align: center;
+}
+.flex-items p{
+   color: #1d1f1f;
+   font-size: 18px;
+   text-align: justify;
+   margin-top: 10px;
+   line-height: 25px;
+}
+
+.flex-container .why-us{
+    background-color: rgb(236, 42, 172);
+    position:absolute;
+    /* border: 5px solid red; */
+    height: 200px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center;
+    line-height: 190px; */
+    border-radius:90px 0px 90px 0px;
+}
+
+/* Payment-Methods Section */
+.payment-methods{
+    border: 1px solid black;
+    width: 100%;
+    height: 500px;
+    background:linear-gradient(rgba(245, 13, 175, 0),rgb(131, 8, 231)),url(https://images.unsplash.com/photo-1562575214-da9fcf59b907?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aW50ZXJuZXR8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80) no-repeat;
+    background-size: cover;
+    background-position: centre center;
+    background-attachment: fixed;
+
+}
+.intro-flex-container{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    /* justify-content: center; */
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.intro-flex-items{
+    width:15%;
+    /* border:2px solid black; */
+    text-align: center;
+    color:white;
+}
+.intro-flex-items a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    line-height: 30px;
+}
+.intro-flex-items a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    line-height: 30px;
+}
+.intro-flex-items a:hover{
+    color: rgb(21, 168, 226);
+}
+.payment-methods-image{
+    margin-top: 50px;
+}
+.payment-methods-image a{
+    display: block;
+    text-align: center;
+} 
+/* Footer section */
+footer{
+    height: 90px;
+    background-color: #201f1f;
+}
+footer span{
+    float: left;
+    line-height: 90px;
+    margin-left: 130px;
+}
+.social-icon{
+    /* border:2px solid rgb(214, 27, 27); */
+    height: 100%;
+    width: 50%;
+    float: right;
+}
+.social-icon ul{
+    list-style-type: none;
+    text-align: center;
+}
+.social-icon ul li{
+    display: inline-block;
+    margin-left: -5px;
+}
+.social-icon ul li a{
+    border:2px solid black;
+    padding:15px;
+    margin-right: 15px;
+    border-radius: 50%;
+    line-height: 90px;
+    color:rgb(35, 200, 241);
+}
+.social-icon ul li a:hover{
+   background-color: #626f7a;
+   transition: 0.5s;
+}
